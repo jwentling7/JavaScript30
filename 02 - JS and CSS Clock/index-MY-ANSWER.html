@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS + CSS Clock</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>First Attempt</p>
+      <div class="clock">
+        <div class="clock-face">
+          <div class="hand hour-hand"></div>
+          <div class="hand min-hand"></div>
+          <div class="hand second-hand"></div>
+          <div class="center-dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p>Second Attempt</p>
+      <div class="clock">
+        <div class="clock-face">
+          <div class="hand hour-hand2"></div>
+          <div class="hand min-hand2"></div>
+          <div class="hand second-hand2"></div>
+          <div class="center-dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      html {
+        background: #018ded url(https://unsplash.it/1500/1000?image=881&blur=5);
+        background-size: cover;
+        font-family: "helvetica neue";
+        text-align: center;
+        font-size: 10px;
+      }
+
+      .container {
+        margin: 0;
+        font-size: 2rem;
+        display: flex;
+        flex: 1;
+        min-height: 70vh;
+        align-items: center;
+      }
+
+      p {
+        margin: 0 auto;
+      }
+
+      .clock {
+        width: 30rem;
+        height: 30rem;
+        border: 20px solid white;
+        border-radius: 50%;
+        margin: 50px auto;
+        position: relative;
+        padding: 2rem;
+        box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+          inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .clock-face {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: translateX(
+          -3px
+        ); /* account for the width of the clock hands **original was translateY */
+      }
+
+      /* Gave all hands a transform-origin of bottom to circle around the center 
+      Also swapped width and height, and changed top to left to send them to the top to start */
+      .hand {
+        width: 6px;
+        height: 50%;
+        background: black;
+        position: absolute;
+        left: 50%;
+        transform-origin: bottom;
+
+        /* Got these from the FINISHED file to help with a different transition that looks more like an analog clock*/
+        transition: all 0.05s;
+        transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+      }
+
+      /* Shortened the length of the hour hand */
+      .hour-hand,
+      .hour-hand2 {
+        height: 30%;
+        top: 20%;
+      }
+
+      /* Made the second hand skinnier */
+      .second-hand,
+      .second-hand2 {
+        width: 3px;
+      }
+
+      /* Added a center dot for asthetics :]  */
+      .center-dot {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: black;
+      }
+    </style>
+
+    <script>
+      /******************************************************
+        This answer was my first attempt. It is not based off of the actual time.
+        The timer starts when the page is refreshed.
+      ******************************************************/
+      const hourHand = document.querySelector(".hour-hand");
+      const minHand = document.querySelector(".min-hand");
+      const secondHand = document.querySelector(".second-hand");
+
+      // This function moves the hour hand
+      let h = 90;
+      let hour = function () {
+        h += 30;
+        hourHand.style.transform = `rotate(${h}deg)`;
+      };
+
+      // This function moves the minute hand
+      let m = 90;
+      let minute = function () {
+        m += 6;
+        minHand.style.transform = `rotate(${m}deg)`;
+      };
+
+      // This function moves the second hand
+      let s = 0;
+      let second = function () {
+        s += 6;
+        secondHand.style.transform = `rotate(${s}deg)`;
+      };
+
+      // These three will call either the hour, minute, or second function to move their respective hands
+      // setInterval will keep calling the function that is passed every interval that is defined
+      setInterval(hour, 3600000);
+      setInterval(minute, 60000);
+      setInterval(second, 1000);
+
+      /******************************************************
+        This answer after seeing the FINISHED file was using real time. I looked up the Date class and went from there.
+        Took the setDate(); or rather setTime(); from the FINISHED file
+      ******************************************************/
+      const hourHand2 = document.querySelector(".hour-hand2");
+      const minHand2 = document.querySelector(".min-hand2");
+      const secondHand2 = document.querySelector(".second-hand2");
+
+      let setTime = function () {
+        // Collects the current time
+        let currTime = new Date();
+
+        // These rotate the hands
+        hourHand2.style.transform = `rotate(${currTime.getHours() * 30}deg)`;
+        minHand2.style.transform = `rotate(${currTime.getMinutes() * 6}deg)`;
+        secondHand2.style.transform = `rotate(${currTime.getSeconds() * 6}deg)`;
+      };
+
+      // Update the clock every second
+      setInterval(setTime, 1000);
+
+      /* All this does is sets the time immediately when the page loads
+         Comment this out and refresh the page, you will see that the hands start out
+         at the top of the clock instead of immediately at the current time
+      */
+      setTime();
+    </script>
+  </body>
+</html>

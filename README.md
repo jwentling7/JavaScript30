@@ -13,7 +13,7 @@ Check out [my blog](https://jessicawentling.com/category/programming/javascript3
 ## The Challenges
 
 1. [x] ~~[JavaScript Drum Kit](./01%20-%20JavaScript%20Drum%20Kit)~~ Completed: June 26, 2021 - [My Thoughts](https://jessicawentling.com/category/programming/javascript30/day01/) (Blog not set up yet! Stay tuned!)
-2. [ ] [JS + CSS Clock](./02%20-%20JS%20%2B%20CSS%20Clock)
+2. [x] ~~[JS + CSS Clock](./02%20-%20JS%20%2B%20CSS%20Clock)~~ Completed: June 29, 2021 - [My Thoughts](https://jessicawentling.com/category/programming/javascript30/day02/) (Blog not set up yet! Stay tuned!)
 3. [ ] [CSS Variables](./03%20-%20CSS%20Variables)
 4. [ ] [Array Cardio, Day 1](./04%20-%20Array%20Cardio%20Day%201)
 5. [ ] [Flex Panel Gallery](./05%20-%20Flex%20Panel%20Gallery)
@@ -32,7 +32,7 @@ Check out [my blog](https://jessicawentling.com/category/programming/javascript3
 18. [ ] [Adding Up Times with Reduce](./18%20-%20Adding%20Up%20Times%20with%20Reduce)
 19. [ ] [Webcam Fun](./19%20-%20Webcam%20Fun)
 20. [ ] [Speech Detection](./20%20-%20Speech%20Detection)
-21. [ ] Geolocation
+21. [ ] [Geolocation](./21%20-%20Geolocation)
 22. [ ] [Follow Along Link Highlighter](./22%20-%20Follow%20Along%20Link%20Highlighter)
 23. [ ] [Speech Synthesis](./23%20-%20Speech%20Synthesis)
 24. [ ] [Sticky Nav](./24%20-%20Sticky%20Nav)
