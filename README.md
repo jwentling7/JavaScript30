@@ -14,7 +14,7 @@ Check out [my blog](https://jessicawentling.com/category/programming/javascript3
 
 1. [x] ~~[JavaScript Drum Kit](./01%20-%20JavaScript%20Drum%20Kit)~~ Completed: June 26, 2021 - [My Thoughts](https://jessicawentling.com/category/programming/javascript30/day01/) (Blog not set up yet! Stay tuned!)
 2. [x] ~~[JS + CSS Clock](./02%20-%20JS%20%2B%20CSS%20Clock)~~ Completed: June 29, 2021 - [My Thoughts](https://jessicawentling.com/category/programming/javascript30/day02/) (Blog not set up yet! Stay tuned!)
-3. [ ] [CSS Variables](./03%20-%20CSS%20Variables)
+3. [x] ~~[CSS Variables](./03%20-%20CSS%20Variables)~~ Completed: June 30, 2021 - [My Thoughts](https://jessicawentling.com/category/programming/javascript30/day03/) (Blog not set up yet! Stay tuned!)
 4. [ ] [Array Cardio, Day 1](./04%20-%20Array%20Cardio%20Day%201)
 5. [ ] [Flex Panel Gallery](./05%20-%20Flex%20Panel%20Gallery)
 6. [ ] [Type Ahead](./06%20-%20Type%20Ahead)
