@@ -16,7 +16,7 @@ Check out [my blog](https://jessicawentling.com/category/programming/javascript3
 2. [x] ~~[JS + CSS Clock](./02%20-%20JS%20%2B%20CSS%20Clock)~~ Completed: June 29, 2021 - [My Thoughts](https://jessicawentling.com/category/programming/javascript30/day02/) (Blog not set up yet! Stay tuned!)
 3. [x] ~~[CSS Variables](./03%20-%20CSS%20Variables)~~ Completed: June 30, 2021 - [My Thoughts](https://jessicawentling.com/category/programming/javascript30/day03/) (Blog not set up yet! Stay tuned!)
 4. [x] ~~[Array Cardio, Day 1](./04%20-%20Array%20Cardio%20Day%201)~~ Completed: July 28, 2021 - [My Thoughts](https://jessicawentling.com/category/programming/javascript30/day04/) (Blog not set up yet! Stay tuned!)
-5. [ ] [Flex Panel Gallery](./05%20-%20Flex%20Panel%20Gallery)
+5. [x] ~~[Flex Panel Gallery](./05%20-%20Flex%20Panel%20Gallery)~~ Completed: July 28, 2021 - [My Thoughts](https://jessicawentling.com/category/programming/javascript30/day05/) (Blog not set up yet! Stay tuned!)
 6. [ ] [Type Ahead](./06%20-%20Type%20Ahead)
 7. [ ] [Array Cardio, Day 2](./07%20-%20Array%20Cardio%20Day%202)
 8. [ ] [Fun with HTML5 Canvas](./08%20-%20Fun%20with%20HTML5%20Canvas)
